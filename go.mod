@@ -4,7 +4,7 @@ go 1.24.3
 
 require (
 	github.com/ollama/ollama v0.9.0
-	github.com/revrost/go-openrouter v0.1.2
+	github.com/revrost/go-openrouter v0.1.5
 	github.com/sirupsen/logrus v1.9.3
 )
 
