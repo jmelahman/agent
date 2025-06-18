@@ -80,7 +80,9 @@ type Agent struct {
 func (a *Agent) Run(ctx context.Context) error {
 	conversation := []ollama.Message{}
 
-	fmt.Printf("Chat with an Agent (%s)\nModel: %s\n", version, a.model)
+	serverVersion, err := a.client.Version(ctx)
+	must("get server version", err)
+	fmt.Printf("Chat with an Agent (%s)\nOllama Server Version: %s\nModel: %s\n", version, serverVersion, a.model)
 
 	resp, err := a.client.List(ctx)
 	must("list models", err)
