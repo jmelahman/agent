@@ -3,7 +3,7 @@ module github.com/jmelahman/agent
 go 1.24.3
 
 require (
-	github.com/ollama/ollama v0.9.1
+	github.com/ollama/ollama v0.9.3
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.7.0
 )
